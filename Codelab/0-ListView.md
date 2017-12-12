@@ -1,15 +1,50 @@
-# Setup
-## Creating Project
+# A Simple List View
+## Create a ListView layout
 
-1. In the Android Studio welcome screen select **Create a new Android Studio Project**
+1. Create a new Android Studio project
 
-2. Fill up some info about your project.
- * Application name e.g. *Pasar Malam Locator*
- * Company domain e.g. *agmostudio.com*.
- * You may change the *Project Location* to somewhere you like.
+2. Update the layout of your `activity_main.xml` to include `ListView`.
+```xml
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.agmostudio.myapplication.MainActivity">
 
-3. In the *Target Android Devices*, just leave it as default for now and click **Next** as we are just targeting *Phones and Tablet*.
+    <ListView
+        android:id="@+id/listview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"/>
+</LinearLayout>
+```
 
-4. In the *Add an Activity to Mobile*, select the 3rd item, which is **Empty Activity** and click **Next**
+## Set array data to your layout
+1. Update your `MainActivity` with code below.
+  ```java
+  import android.os.Bundle;
+  import android.support.v7.app.AppCompatActivity;
+  import android.widget.ArrayAdapter;
+  import android.widget.ListView;
 
-5. In the *Customize the Activity*, you may just leave it as default values now. Your `Activity` name will be `MainActivity` and click **Finish**
+  public class MainActivity extends AppCompatActivity {
+
+      @Override
+      protected void onCreate(Bundle savedInstanceState) {
+          super.onCreate(savedInstanceState);
+          setContentView(R.layout.activity_main);
+
+          String[] array = {"Android", "iPhone", "Windows", "Blackberry", "Ubuntu", "Windows7", "macOS"};
+
+          ArrayAdapter adapter = new ArrayAdapter<>(this,
+                  android.R.layout.simple_list_item_1, array);
+
+          ListView listView = findViewById(R.id.listview);
+          listView.setAdapter(adapter);
+      }
+  }
+  ```
+
+## Result
+![SimpleList](https://github.com/AgmoStudioSdnBhd/AndroidBeginner/raw/master/art/simplelist.png)
