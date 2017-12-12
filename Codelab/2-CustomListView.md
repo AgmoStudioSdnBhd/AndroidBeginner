@@ -191,3 +191,11 @@ class DynamicAdapter extends ArrayAdapter {
 
 ## Result
 ![CustomListView](https://github.com/AgmoStudioSdnBhd/AndroidBeginner/raw/master/art/customlistview.png)
+
+
+
+
+
+## Challenge 
+1. Create a list view with `ImageView` icon
+![CustomListView](https://github.com/AgmoStudioSdnBhd/AndroidBeginner/raw/master/art/customlistview-challenge.png)
