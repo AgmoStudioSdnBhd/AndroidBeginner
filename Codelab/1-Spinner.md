@@ -3,7 +3,7 @@
 
 1. Create a new Android Studio project
 
-2. Update the layout of your `activity_main.xml` to include `ListView`.
+2. Update the layout of your `activity_main.xml` to include `Spinner`.
 ```xml
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout
@@ -13,10 +13,10 @@
     android:layout_height="match_parent"
     tools:context="com.agmostudio.myapplication.MainActivity">
 
-    <ListView
-        android:id="@+id/listview"
+    <Spinner
+        android:id="@+id/spinner"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="wrap_content"/>
 </LinearLayout>
 ```
 
@@ -26,7 +26,7 @@
   import android.os.Bundle;
   import android.support.v7.app.AppCompatActivity;
   import android.widget.ArrayAdapter;
-  import android.widget.ListView;
+  import android.widget.Spinner;
 
   public class MainActivity extends AppCompatActivity {
 
@@ -40,14 +40,11 @@
           ArrayAdapter adapter = new ArrayAdapter<>(this,
                   android.R.layout.simple_list_item_1, array);
 
-          ListView listView = findViewById(R.id.listview);
-          listView.setAdapter(adapter);
+          Spinner spinner = findViewById(R.id.spinner);
+          spinner.setAdapter(adapter);
       }
   }
   ```
 
 ## Result
-![SimpleList](https://github.com/AgmoStudioSdnBhd/AndroidBeginner/raw/master/art/simplelist.png)
-
-## Challenge
-1. Add more item to your list to make it scrollable
+![Spinner](https://github.com/AgmoStudioSdnBhd/AndroidBeginner/raw/master/art/spinner.png)
