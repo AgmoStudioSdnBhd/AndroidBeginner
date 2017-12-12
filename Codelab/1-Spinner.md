@@ -1,6 +1,6 @@
-# A Simple List View
-## Create a ListView layout
+# A Dropdown List
 
+## Create a Spinner layout
 1. Create a new Android Studio project
 
 2. Update the layout of your `activity_main.xml` to include `Spinner`.

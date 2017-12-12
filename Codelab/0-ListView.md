@@ -1,6 +1,6 @@
 # A Simple List View
-## Create a ListView layout
 
+## Create a ListView layout
 1. Create a new Android Studio project
 
 2. Update the layout of your `activity_main.xml` to include `ListView`.
@@ -50,4 +50,4 @@
 ![SimpleList](https://github.com/AgmoStudioSdnBhd/AndroidBeginner/raw/master/art/simplelist.png)
 
 ## Challenge
-1. Add more item to your list to make it scrollable
+1. Add more items to your list to make it scrollable

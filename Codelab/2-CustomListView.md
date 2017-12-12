@@ -1,6 +1,6 @@
 # A Custom List View
-## Create a ListView layout
 
+## Create a ListView layout
 1. Create a new Android Studio project
 
 2. Update the layout of your `activity_main.xml` to include `ListView`.
@@ -190,4 +190,4 @@ class DynamicAdapter extends ArrayAdapter {
 ```
 
 ## Result
-![SimpleList](https://github.com/AgmoStudioSdnBhd/AndroidBeginner/raw/master/art/customlistview.png)
+![CustomListView](https://github.com/AgmoStudioSdnBhd/AndroidBeginner/raw/master/art/customlistview.png)
