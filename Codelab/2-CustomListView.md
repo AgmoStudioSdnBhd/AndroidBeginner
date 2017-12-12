@@ -196,6 +196,7 @@ class DynamicAdapter extends ArrayAdapter {
 
 
 
-## Challenge 
+## Challenge
 1. Create a list view with `ImageView` icon
+
 ![CustomListView](https://github.com/AgmoStudioSdnBhd/AndroidBeginner/raw/master/art/customlistview-challenge.png)
